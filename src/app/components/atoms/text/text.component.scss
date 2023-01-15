@@ -1,0 +1,14 @@
+@use "forwards" as *;
+
+:host.a-text {
+  color: $color-gray;
+  font-size: $font-size-normal;
+}
+
+:host.a-text--16 {
+  font-size: $font-size-base;
+}
+
+:host.a-text--18 {
+  font-size: $font-size-medium;
+}

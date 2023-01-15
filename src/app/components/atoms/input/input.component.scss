@@ -1,0 +1,16 @@
+@use "forwards" as *;
+
+.a-input__label {
+  font-size: $font-size-base;
+  color: $color-gray;
+}
+
+.a-input__input {
+  font-size: $font-size-base;
+  color: $color-gray;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  box-shadow: $shadow-primary, $shadow-secondary;
+}

@@ -1,0 +1,15 @@
+@mixin hover($parent: null) {
+  @if $parent {
+    @media (hover: hover) {
+      #{$parent}:hover & {
+        @content;
+      }
+    }
+  } @else {
+    @media (hover: hover) {
+      &:hover {
+        @content;
+      }
+    }
+  }
+}

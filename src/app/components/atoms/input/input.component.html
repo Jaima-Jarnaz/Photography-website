@@ -1,0 +1,12 @@
+<div class="a-input">
+  <label class="a-input__label" [for]="id">{{ label }}</label>
+  <input
+    class="a-input__input"
+    [type]="type"
+    [placeholder]="placeholder"
+    [id]="id"
+    [name]="name"
+    [required]="required"
+    (change)="(onChange)"
+  />
+</div>
