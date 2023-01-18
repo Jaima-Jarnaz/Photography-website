@@ -1,0 +1,13 @@
+@use "forwards" as *;
+
+.m-image-card {
+  width: 400px;
+  background-color: $color-primary;
+  color: $color-black;
+  height: 300px;
+}
+
+.m-image-card__image {
+  width: 100px;
+  height: 100px;
+}
