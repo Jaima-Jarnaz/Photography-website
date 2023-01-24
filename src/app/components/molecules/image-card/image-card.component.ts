@@ -1,4 +1,5 @@
 import { Component, HostBinding, Input, OnInit } from '@angular/core';
+import { ComponentsService, modifiersType } from '../../components.service';
 
 @Component({
   selector: 'app-image-card',
@@ -6,16 +7,17 @@ import { Component, HostBinding, Input, OnInit } from '@angular/core';
   styleUrls: ['./image-card.component.scss'],
 })
 export class ImageCardComponent implements OnInit {
-  @Input()
-  imgSrc!: string;
+  constructor(private componentsService: ComponentsService) {}
 
-  @Input()
-  title!: string;
-  @Input()
-  description!: string;
+  @Input() order?: modifiersType<'order'>;
+
+  @Input() imgSrc!: string;
+  @Input() title: string = ''; // Required value so assign as empty
+  @Input() description!: string;
   @Input() alt?: string;
-  @HostBinding('class') classes: string = 'm-image-card';
+  @HostBinding('class') get classes(): string {
+    return this.componentsService.getClasses('m-image-card', this.order);
+  }
 
-  constructor() {}
   ngOnInit(): void {}
 }

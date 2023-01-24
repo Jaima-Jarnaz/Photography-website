@@ -1,0 +1,21 @@
+@use "forwards" as *;
+:host {
+  color: $color-gray;
+  font-weight: 500;
+}
+
+:host.a-heading--h1 {
+  font-size: $font-size-xx-large;
+}
+
+:host.a-heading--h2 {
+  font-size: $font-size-x-large;
+}
+
+:host.a-heading--h3 {
+  font-size: $font-size-larger;
+}
+
+:host.a-heading--h4 {
+  font-size: $font-size-large;
+}

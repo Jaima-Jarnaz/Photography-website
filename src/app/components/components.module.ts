@@ -5,6 +5,7 @@ import { TextComponent } from './atoms/text/text.component';
 import { InputComponent } from './atoms/input/input.component';
 import { ButtonComponent } from './atoms/button/button.component';
 import { ImageCardComponent } from './molecules/image-card/image-card.component';
+import { HeadingComponent } from './atoms/heading/heading.component';
 
 
 
@@ -14,7 +15,8 @@ import { ImageCardComponent } from './molecules/image-card/image-card.component'
     TextComponent,
     InputComponent,
     ButtonComponent,
-    ImageCardComponent
+    ImageCardComponent,
+    HeadingComponent
   ],
   imports: [
     CommonModule
@@ -24,7 +26,8 @@ import { ImageCardComponent } from './molecules/image-card/image-card.component'
     TextComponent,
     InputComponent,
     ButtonComponent,
-    ImageCardComponent
+    ImageCardComponent,
+    HeadingComponent
   ]
 })
 export class ComponentsModule { }
