@@ -8,5 +8,9 @@
     [name]="name"
     [required]="required"
     (change)="(onChange)"
+    #inputRef
+    (blur)="ngAfterViewInit()"
   />
+
+  <input #dataRef class="a-input__data" />
 </div>

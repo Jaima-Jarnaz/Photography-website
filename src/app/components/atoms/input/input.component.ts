@@ -1,4 +1,12 @@
-import { Component, OnInit, Input, HostBinding } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  HostBinding,
+  ViewChild,
+  ElementRef,
+  AfterViewInit,
+} from '@angular/core';
 
 @Component({
   selector: 'app-input',
@@ -10,10 +18,21 @@ export class InputComponent implements OnInit {
   @Input() type?: string;
   @Input() label?: string;
   @Input() name?: string;
+
   @Input() required?: boolean;
   @Input() id?: string;
   @Input() onChangeHandler?: (event: Event) => void;
   @HostBinding('class') classes: string = 'a-input';
+
+  //UseCase of @viewChild decorator with DOM Elements
+  @ViewChild('inputRef') inputRef!: ElementRef;
+  @ViewChild('dataRef') data!: ElementRef;
+
+  ngAfterViewInit() {
+    var content = this.inputRef.nativeElement.value;
+    console.log(content);
+    this.data.nativeElement.value = content;
+  }
 
   constructor() {}
 

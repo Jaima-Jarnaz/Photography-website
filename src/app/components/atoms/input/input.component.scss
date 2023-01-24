@@ -14,3 +14,9 @@
   outline: none;
   box-shadow: $shadow-primary, $shadow-secondary;
 }
+
+.a-input__data {
+  padding: 24px;
+  background-color: $color-primary;
+  color: $color-white;
+}
