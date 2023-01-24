@@ -1,13 +1,28 @@
 @use "forwards" as *;
 
-.m-image-card {
-  width: 400px;
-  background-color: $color-primary;
-  color: $color-black;
-  height: 300px;
+$root: &;
+
+:host {
+  display: flex;
+  align-items: center;
+  column-gap: 52px;
+}
+
+.m-image-card--order {
+  .m-image-card__image & {
+    order: 2;
+  }
+
+  .m-image-card__content & {
+    order: 1;
+  }
 }
 
 .m-image-card__image {
-  width: 100px;
-  height: 100px;
+  width: 500px;
+  height: 400px;
+}
+.m-image-card__content {
+  display: flex;
+  flex-direction: column;
 }

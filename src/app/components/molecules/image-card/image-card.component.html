@@ -1,5 +1,5 @@
-<ng-container ngClass="m-image-card">
-  <img class="m-image-card__image" [alt]="alt" [src]="imgSrc" />
-  <app-text>{{ title }}</app-text>
-  <app-text>{{ description }}</app-text>
-</ng-container>
+<img class="m-image-card__image" [alt]="alt" [src]="imgSrc" />
+<div class="m-image-card__content">
+  <app-heading tag="h3">{{ title }}</app-heading>
+  <app-text fontSize="18">{{ description }}</app-text>
+</div>
