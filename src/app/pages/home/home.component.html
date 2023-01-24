@@ -1,0 +1,7 @@
+<app-image-card
+  *ngFor="let item of CARD_DATA; let ind = index"
+  [imgSrc]="item.imgSrc"
+  [title]="item.title"
+  [description]="item.description"
+  order="order"
+></app-image-card>
