@@ -1,0 +1,32 @@
+.p-practice {
+  margin: 0;
+  padding: 0 30px;
+}
+
+.p-practice__content {
+  padding-left: 50px;
+}
+
+.p-practice__heading {
+  text-align: center;
+}
+
+.p-practice__input {
+  padding: 16px 30px;
+  font-size: 18px;
+  color: rgb(65, 57, 57);
+  outline: none;
+  border: 1px solid royalblue;
+  border-radius: 12px;
+  margin: 5px;
+  &:focus {
+    border-color: rgba(48, 144, 239, 0.835);
+  }
+}
+
+.p-practice__line-break {
+  margin-top: 30px;
+  height: 2px;
+  width: 90%;
+  background-color: royalblue;
+}

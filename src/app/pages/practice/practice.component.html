@@ -1,0 +1,55 @@
+<div class="p-practice">
+  <app-heading class="p-practice__heading">Angular 14 Concepts</app-heading>
+  <hr class="p-practice__line-break" />
+
+  <div class="p-practice__content">
+    <!-- @viewChild -->
+    <app-heading tag="h2">@viewChild</app-heading>
+    <app-text fontSize="18">
+      UseCase of @viewChild decorator with DOM Elements</app-text
+    >
+    <div>
+      <input
+        class="p-practice__input"
+        #input
+        placeholder="Enter your information"
+        (blur)="ngAfterViewInit()"
+      />
+      <input
+        class="p-practice__input"
+        #enteredData
+        placeholder="Entered Data"
+      />
+    </div>
+  </div>
+  <hr class="p-practice__line-break" />
+  <div class="p-practice__content">
+    <!-- @contentChild -->
+    <app-heading tag="h2">@contentChild</app-heading>
+    <app-text fontSize="18">
+      UseCase of @contentChild decorator with child component</app-text
+    >
+    <app-container>
+      @ContentChild in Angular is a decorator that is used to access a child
+      component or element that is projected into the current component using
+      the ng-content directive.<br />It is used to access the first element or
+      the directive that matches the selector. The @ContentChild decorator can
+      be used to access the child element or directive in the component class
+      and use its properties or methods.
+    </app-container>
+
+    <app-container>
+      <!-- <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="home"
+      ></mat-icon> -->
+      <input
+        class="p-practice__input"
+        placeholder="Choose File"
+        type="file"
+        #inputFileRef
+      />
+    </app-container>
+  </div>
+</div>

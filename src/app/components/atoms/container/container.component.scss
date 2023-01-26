@@ -1,0 +1,13 @@
+@use "forwards" as *;
+
+:host {
+  background-color: $color-gray-light;
+  color: $color-white;
+  font-size: $font-size-base;
+  font-weight: 400;
+  padding: 20px 24px;
+  border-radius: 12px;
+  margin: 5px 2px;
+  width: 50%;
+  display: block;
+}

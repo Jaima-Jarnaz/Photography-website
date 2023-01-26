@@ -2,6 +2,7 @@
 :host {
   color: $color-gray;
   font-weight: 500;
+  display: block;
 }
 
 :host.a-heading--h1 {
