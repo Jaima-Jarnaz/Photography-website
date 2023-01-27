@@ -24,6 +24,16 @@ export class ContainerComponent implements OnInit, AfterContentInit {
   ngAfterContentInit(): void {
     const { nativeElement } = this.inputFromChildRef2;
     nativeElement.style.display = 'none';
+
+    nativeElement.addEventListener('change', function (e) {
+      const data = e.target as HTMLInputElement;
+
+      console.log(data.files);
+    });
+  }
+
+  openFile() {
+    this.inputFromChildRef2.nativeElement.click();
   }
 
   ngOnInit(): void {}

@@ -38,18 +38,17 @@
       and use its properties or methods.
     </app-container>
 
-    <app-container>
-      <!-- <mat-icon
-        aria-hidden="false"
-        aria-label="Example home icon"
-        fontIcon="home"
-      ></mat-icon> -->
-      <input
-        class="p-practice__input"
-        placeholder="Choose File"
-        type="file"
-        #inputFileRef
-      />
-    </app-container>
+    <div class="p-practice__file-upload">
+      <app-container>
+        <input
+          class="p-practice__input"
+          placeholder="Choose File"
+          type="file"
+          #inputFileRef
+        />
+        <img src="../../../assets/images/file.svg" class="p-practice__img" />
+        <app-text>Choose your file</app-text>
+      </app-container>
+    </div>
   </div>
 </div>

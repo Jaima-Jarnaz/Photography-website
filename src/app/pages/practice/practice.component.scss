@@ -24,9 +24,21 @@
   }
 }
 
+.p-practice__img {
+  width: 100px;
+  height: 100px;
+}
+
 .p-practice__line-break {
   margin-top: 30px;
   height: 2px;
   width: 90%;
   background-color: royalblue;
+}
+
+.p-practice__file-upload {
+  width: 200px;
+  text-align: center;
+  height: 200px;
+  cursor: pointer;
 }
