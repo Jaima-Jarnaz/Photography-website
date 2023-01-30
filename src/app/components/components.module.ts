@@ -6,9 +6,7 @@ import { InputComponent } from './atoms/input/input.component';
 import { ButtonComponent } from './atoms/button/button.component';
 import { ImageCardComponent } from './molecules/image-card/image-card.component';
 import { HeadingComponent } from './atoms/heading/heading.component';
-import { ContainerComponent } from './atoms/container/container.component';
-
-
+import { ContainerComponent } from './atoms/practice-container/container.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +16,9 @@ import { ContainerComponent } from './atoms/container/container.component';
     ButtonComponent,
     ImageCardComponent,
     HeadingComponent,
-    ContainerComponent
+    ContainerComponent,
   ],
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule],
   exports: [
     IconComponent,
     TextComponent,
@@ -30,7 +26,7 @@ import { ContainerComponent } from './atoms/container/container.component';
     ButtonComponent,
     ImageCardComponent,
     HeadingComponent,
-    ContainerComponent
-  ]
+    ContainerComponent,
+  ],
 })
-export class ComponentsModule { }
+export class ComponentsModule {}

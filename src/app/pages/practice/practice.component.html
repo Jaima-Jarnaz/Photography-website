@@ -1,5 +1,7 @@
 <div class="p-practice">
-  <app-heading class="p-practice__heading">Angular 14 Concepts</app-heading>
+  <app-heading class="p-practice__heading" tag="h1"
+    >Angular 14 Concepts</app-heading
+  >
   <hr class="p-practice__line-break" />
 
   <div class="p-practice__content">
@@ -29,6 +31,7 @@
     <app-text fontSize="18">
       UseCase of @contentChild decorator with child component</app-text
     >
+
     <app-container>
       @ContentChild in Angular is a decorator that is used to access a child
       component or element that is projected into the current component using
@@ -36,8 +39,63 @@
       the directive that matches the selector. The @ContentChild decorator can
       be used to access the child element or directive in the component class
       and use its properties or methods.
+
+      <strong
+        >reference link : https://www.youtube.com/watch?v=PFnjOl62iiY
+      </strong>
     </app-container>
 
+    <div class="p-practice__container">
+      <div>
+        <app-text fontSize="18">Current component .html file</app-text>
+        <img
+          src="../../../assets/images/practice/contentChild-1.png"
+          class="p-practice__learning-img"
+        />
+      </div>
+      <div>
+        <app-text fontSize="18"
+          >Child component .html file (app-container)</app-text
+        >
+
+        <img
+          src="../../../assets/images/practice/contentChild-2.png"
+          class="p-practice__learning-img"
+        />
+      </div>
+    </div>
+
+    <div class="p-practice__container">
+      <div>
+        <app-text fontSize="18">Child component .ts file</app-text>
+        <img
+          src="../../../assets/images/practice/contentChild-3.png"
+          class="p-practice__learning-img"
+        />
+      </div>
+      <div>
+        <img
+          src="../../../assets/images/practice/contentChild-4.png"
+          class="p-practice__learning-img"
+        />
+      </div>
+    </div>
+    <!-- Explanation -->
+    <div class="p-practice__container">
+      <app-text fontSize="18">
+        <pre>Here,</pre>
+        Our current component is <strong>app-practice </strong> and child
+        component is <strong>app-container</strong>. Child component content is
+        passing using <strong>ng-content</strong> . So we gave one template
+        reference <strong> #inputFileRef</strong> in input tag from current
+        component which is <strong>app-practice</strong> . Receiving this
+        template reference in child component and used it using
+        <strong>@contentChild</strong> decorator
+      </app-text>
+    </div>
+
+    <!-- Output of contentChild example -->
+    <app-text>Output</app-text>
     <div class="p-practice__file-upload">
       <app-container>
         <input

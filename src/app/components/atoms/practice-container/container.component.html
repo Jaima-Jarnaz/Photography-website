@@ -1,0 +1,6 @@
+<div (click)="openFile()">
+  <ng-content></ng-content>
+  <span *ngIf="imgSrc">
+    <img [src]="imgSrc" class="a-container__img" />
+  </span>
+</div>
