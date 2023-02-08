@@ -8,6 +8,7 @@ import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class PracticeComponent implements AfterViewInit {
   constructor() {}
+  error: boolean = true;
 
   // UseCase of @ViewChild
   @ViewChild('input') inputRef!: ElementRef;
